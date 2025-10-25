@@ -6,7 +6,6 @@
 
 *Empowering Rural Education Through AI*
 
-[![License: MIT](https://img.shields.://opensource.org/licenses/MIThttps://img.shields.io/badge/FastAPI-0.109.0-greens://img.shields.key-features) -  [Problem](#-problem-statement) -  [Solution](#-our-solution) -  [Tech Stack](#-tech-stack) -  [Getting Started](#-getting-started) -  [API Docs](#-api-documentation)
 
 </div>
 
