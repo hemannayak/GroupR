@@ -55,37 +55,19 @@ During Kerala 2018 floods, thousands of life-saving signals on social media went
 
 ***
 
-## 🏛️ Architecture
+🏗️ High-Level System Architecture
+This diagram shows how data moves from external sources to actionable insights and user interfaces:
 
-```mermaid
-graph TD
-    subgraph Data Sources
-        A[Twitter/snscrape] --> B[Ingest Layer]
-        C[News (RSS/JS)] --> B
-        D[Manual/NGO Input] --> B
-    end
-
-    subgraph Backend
-        B --> E[AI Processing/Extractor]
-        E --> F[ChromaDB/Vector Store]
-        E --> G[Situation Reporter]
-        F --> H[API Layer]
-    end
-
-    subgraph Frontend
-        H --> I[Streamlit/Rapid React UI]
-    end
-```
-
-High-Level System Architecture
 text
 graph TD
     subgraph Data Sources
-        A1[Twitter (snscrape)] --> B[Ingestion Layer]
-        A2[News Feeds] --> B
-        A3[NGO / User Reports] --> B
+        A1[Twitter (snscrape)]
+        A2[News Feeds]
+        A3[NGO / User Reports]
     end
-
+    A1 --> B[Ingestion Layer]
+    A2 --> B
+    A3 --> B
     B --> C[Processing Pipeline]
     C --> D[AI/ML Models (HF, Classifier)]
     D --> E[Knowledge Base/Vector DB (ChromaDB)]
@@ -93,7 +75,10 @@ graph TD
     F --> G1[Interactive Map (Streamlit)]
     F --> G2[Automated Reporting]
     F --> G3[NGO/Government Dashboards]
+
 ⚙️ Data & Processing Flow
+This flow illustrates the main backend pipeline from raw event ingestion to final dashboard display:
+
 text
 flowchart TD
     INRAW[Raw Text & Data] --> CLEAN[Text Preprocessing]
@@ -102,24 +87,32 @@ flowchart TD
     DEDUP --> CLASSIFY[Severity/Impact Classification]
     CLASSIFY --> STORE[Vector/Events Store]
     STORE --> VIS[Map & Feeds]
+
 🧠 AI/ML Pipeline
+Breakdown of the ML/NLP sequence for each message:
+
 text
 graph LR
-    A[Incoming Crisis Message]
-    --> B[Text Cleaning]
-    --> C[Embeddings/Features: MiniLM, spaCy]
-    --> D[Severity & Type Classification]
-    --> E[Location/Entity Extraction]
-    --> F[Add to ChromaDB/Vector DB]
-    --> G[Semantic/RAG Search, Retrieval]
+    A[Incoming Crisis Message] --> B[Text Cleaning]
+    B --> C[Embeddings/Features: MiniLM, spaCy]
+    C --> D[Severity & Type Classification]
+    D --> E[Location/Entity Extraction]
+    E --> F[Add to ChromaDB/Vector DB]
+    F --> G[Semantic/RAG Search, Retrieval]
+
 🗺️ Frontend Features
+How various features deliver value to users and stakeholders:
+
 text
 graph LR
     M[Live Map] --> U1[User]
     S[Situation Reports] --> U1
     Q[AI Semantic Search] --> U1
     A[Automated Alerts] --> U2[First Responders]
+
 🔔 Prioritization by Severity
+Core pipeline prioritizing critical events in all dashboards/reports:
+
 text
 flowchart TD
     INEVENT[New Event (text)] --> PIPE[Processing/Aggregation]
@@ -128,14 +121,20 @@ flowchart TD
     SEV --> PRIOR[Prioritize in Feeds/Reports/Alerts]
     PRIOR --> MAP[Map: Red (Critical), Orange (High)...]
     PRIOR --> REPORT[Reports: Top 5 Critical First]
+
 🛰️ Deployment/DevOps
+Basic CI/CD and deployment architecture:
+
 text
 graph TD
     GIT[GitHub Actions] --> CI[CI/CD / Docker Build]
     CI --> DEPLOY[Deployment: Cloud VM / Docker Compose]
     DEPLOY --> SRV[FastAPI Backend]
     DEPLOY --> FRONT[Streamlit/React Frontend]
+
 🏆 How the System Reduces SOS-to-Action Time
+A journey map showing how a crisis event goes from raw data to life-saving action:
+
 text
 journey
     title Crisis Event Journey
@@ -149,6 +148,7 @@ journey
     section Action
       First Responders Alerted: 5: System
       Situation Report Generated: 5: System
+
 - **All events are classified by severity; CRITICAL goes to the top**
 - **Optional websocket/polling for instant UI update**
 
