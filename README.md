@@ -1,463 +1,325 @@
-# VidyaMitra - AI Regional Tutor
+# 🚨 SnapFix - Real-Time Pothole & Road Damage Detection System
 
-<div align="center">
+## 📋 Problem Statement
 
-**विद्या मित्र - Friend of Knowledge**
+India loses over **₹30,000 crores annually** due to pothole-related vehicle damage, and **3,000+ deaths** occur each year from accidents caused by poor road conditions. Hyderabad alone reported **15,000+ potholes** in 2024, with municipality complaint systems like T-RACSHA suffering from:
 
-*Bridging India's Education Divide Through AI*
+- **Low Reporting Rate**: Only 5-10% of potholes get manually reported by citizens
+- **Delayed Response**: Average repair time of 45+ days after complaint
+- **Incomplete Data**: No severity classification or prioritization system
+- **Manual Effort**: Citizens must stop, open app, take photo, and manually mark location
+- **Spam & Duplicates**: 30-40% of reports are fake or duplicate entries
 
-[![MIT License](https://img.shields.://choosealicense.com/licenses.ioshields.//img.shields.io**Empowering 250M+ Indian Students Through AI-Powered Regional Language Education**
+**The Core Problem**: Existing solutions require high user effort, resulting in sparse coverage and delayed municipal action, leading to continued accidents and vehicle damage.
 
-</div>
+---
+
+## 💡 Solution
+
+**SnapFix AI** is an intelligent, **zero-friction pothole detection system** that transforms every commuter's smartphone into an automated road quality sensor. Using advanced computer vision and predictive analytics, we:
+
+### Key Features:
+
+1. **Automated Detection**: Background AI detection while users commute - no manual intervention required
+2. **Severity Classification**: AI-powered categorization (Small/Medium/Large) with depth estimation
+3. **Smart Prioritization**: Risk-based urgency scoring considering traffic density, location type, and weather
+4. **Community Verification**: Gamified crowdsourcing system with credibility scores to prevent spam
+5. **Predictive Analytics**: ML model predicts high-risk zones for preventive maintenance
+6. **Municipality Dashboard**: Real-time heatmaps, cost-benefit analysis, and API integration with GHMC
+
+### How It Works:
+```
+User commutes → Phone camera + GPS active → YOLOv8 detects pothole → 
+Auto-classify severity → GPS marks location → Community verifies → 
+Municipality receives prioritized repair list
+```
 
 ***
 
-## 📌 Problem Statement
+## 🌍 Real-World Use Case
 
-### India's Educational Crisis
+### Scenario: Daily Commuter - Priya's Journey
 
-India faces a **severe educational divide** affecting **250 million students** across 22 official languages and hundreds of dialects:
+**Before RoadGuard AI:**
+- Priya hits a pothole on Gachibowli-HITAM route
+- Damages her scooter (₹3,000 repair cost)
+- Thinks about reporting but too busy
+- Pothole remains unreported for 3 months
+- 10+ other vehicles get damaged
 
-#### 🌍 **The Language Barrier**
-- **70% of rural students** cannot understand their English textbooks
-- Science, Mathematics, and technical subjects are taught in English, creating an **insurmountable barrier** for regional language speakers
-- **180M+ rural students** struggle daily with content they cannot comprehend
-- Urban students have access to English-medium education; rural students are left behind
+**After RoadGuard AI:**
+- Priya installs app, keeps phone on dashboard during commute
+- App automatically detects 5 potholes on her route in background
+- Each pothole gets severity classification + GPS coordinates
+- 3 other users verify the detections (credibility +10 points each)
+- GHMC receives urgent repair alert for the 8cm deep pothole
+- Road fixed within 7 days
+- Priya earns 50 points, unlocks "Road Guardian" badge
 
-#### 📚 **Resource Scarcity**
-- Quality educational content is available **only in English/Hindi**
-- Regional languages like Telugu, Tamil, Bengali, Marathi have **minimal educational resources**
-- Digital learning platforms ignore **vernacular education**
-- Existing textbooks cannot be easily converted to regional languages
+### Municipal Use Case: GHMC Ward Officer
 
-#### 👨‍🏫 **Teacher Shortage Crisis**
-- **Critical shortage** of regional language teachers in government schools
-- Student-teacher ratio: **1:40+** in rural areas
-- Teachers cannot provide **personalized attention** or doubt-solving
-- Private tuition (₹5,000-10,000/month) is **unaffordable** for 90% of families
+**Dashboard View:**
+- **47 verified potholes** detected in Ward 150 (Gachibowli)
+- 12 marked as "HIGH URGENCY" (>7cm depth, high traffic)
+- Total estimated repair cost: **₹1.2 lakhs**
+- Predictive heatmap shows 8 new high-risk zones for next month
+- One-click export for contractor assignment
 
-#### 🚫 **Accessibility Gap**
-- **Semi-literate students** and parents cannot navigate text-heavy platforms
-- No voice-based learning in regional languages
-- Low-cost smartphones lack quality educational apps
-- **Digital divide** compounds educational inequality
+**Result**: Data-driven resource allocation, 60% faster repair turnaround
 
-### 💔 The Real Impact
+***
 
-This crisis results in:
-- ❌ 40% dropout rate in rural schools by Class 10
-- ❌ Poor STEM comprehension leading to unemployment
-- ❌ Perpetuation of poverty through lack of education
-- ❌ Widening gap between urban and rural India
-- ❌ Loss of human potential and economic growth
+## 🎯 Impact of Solution
 
-> **"A student in Mumbai learns Newton's Laws in English with tutors. A student in rural Telangana stares at the same English textbook, unable to understand a single word."**
+### Quantifiable Impact:
 
----
+| Metric | Before | After RoadGuard AI | Improvement |
+|--------|--------|-------------------|-------------|
+| **Pothole Detection Rate** | 5-10% (manual) | 85-90% (automated) | **9x increase** |
+| **Citizen Effort** | 5-10 mins per report | 0 mins (passive) | **100% reduction** |
+| **Municipality Response Time** | 45+ days | 7-10 days | **75% faster** |
+| **Data Quality** | 30% spam/duplicates | <5% (verified) | **83% improvement** |
+| **Coverage Density** | Sparse (user-dependent) | Dense (all commuters) | **10x coverage** |
+| **Preventive Maintenance** | None | Predictive zones identified | **NEW capability** |
 
-## 💡 Our Solution: VidyaMitra
+### Social Impact:
 
-**VidyaMitra** (विद्या मित्र - "Friend of Knowledge") is an **AI-powered educational platform** that makes quality education accessible in **regional Indian languages**.
+✅ **Safety**: Reduce pothole-related accidents by 40-50%  
+✅ **Economic**: Save citizens ₹500-1000 crores annually in vehicle damage  
+✅ **Efficiency**: Enable data-driven municipal budgeting and planning  
+✅ **Accessibility**: Works on any smartphone, no special hardware needed  
+✅ **Transparency**: Public dashboard builds government accountability  
+✅ **Employment**: Faster repairs = more work for road contractors
 
-### How It Works
-
-```
-📱 Student scans textbook (English) 
-    ↓
-🤖 AI extracts text (OCR) 
-    ↓
-🌐 Translates to regional language (Hindi/Telugu/Tamil/etc.)
-    ↓
-💬 AI Tutor answers doubts in student's mother tongue
-    ↓
-📚 Generates notes, flashcards, quizzes automatically
-    ↓
-🎓 Student learns in their native language!
-```
-
-### Core Features
-
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| 📷 **OCR Textbook Scanning** | Scan any textbook page or entire book | Convert existing books to digital format |
-| 🌐 **Regional Translation** | Translate to 12+ Indian languages with dialect support | Telugu (Telangana vs Coastal), Hindi (Standard vs Bhojpuri) |
-| 🤖 **AI Tutor (RAG-Powered)** | Context-aware Q&A in student's language | 24/7 personalized tutoring at ₹0 cost |
-| 📝 **Auto Study Materials** | AI-generated notes, flashcards, quizzes | Reduces teacher workload by 60% |
-| 🎙️ **Voice Interface** | Speech-to-text and text-to-speech | Accessible for semi-literate users |
-| 📱 **Offline Mode** | Download chapters, learn without internet | Works in areas with poor connectivity |
-
----
-
-## 🎯 Real-World Use Case
-
-### **Meet Priya** - A 14-year-old from Rural Andhra Pradesh
-
-**Before VidyaMitra:**
-- ❌ Struggles with English Science textbook
-- ❌ No money for private tuition (₹5,000/month)
-- ❌ No teacher to answer doubts
-- ❌ Failing grades, losing confidence
-
-**After VidyaMitra:**
-
-1. **📸 Day 1**: Priya scans her entire Science textbook using her ₹5,000 smartphone
-2. **🌐 Instant Translation**: All chapters converted to **Telugu (Telangana dialect)**
-3. **📚 Study Materials Generated**:
-   - Chapter summaries in Telugu
-   - Flashcards for key concepts (Newton's Laws, Chemical Reactions)
-   - 50 practice questions with answers
-4. **❓ Doubt Solving**: 
-   - **Priya asks** (in Telugu voice): *"న్యూటన్ మూదవ నియమానికి ఉదాహరణ ఇవ్వండి"* (Give example of Newton's Third Law)
-   - **AI responds** (in Telugu): *"ఉదాహరణ: బస్సు అకస్మాత్తుగా ఆగినప్పుడు, మనం ముందుకు వంగుతాం. ఎందుకంటే..."* (Example: When bus suddenly stops, we lean forward. Because...)
-5. **🎓 Results**: 
-   - ✅ Priya understands Science for the first time
-   - ✅ Scores 85% in mid-term exams (up from 45%)
-   - ✅ Regains confidence and interest in STEM
-
-**Cost to Priya's family:** ₹0 (freemium model)
-
----
-
-## 📊 Impact of Solution
-
-### Quantified Impact
-
-| Metric | Impact |
-|--------|--------|
-| **Students Reached** | Target: 250M students across India |
-| **Languages Supported** | 12+ major Indian languages + dialects |
-| **Cost Savings** | ₹60,000/year saved per student (vs private tuition) |
-| **Teacher Efficiency** | 60% reduction in repetitive question answering |
-| **Comprehension Improvement** | 40% average grade improvement in pilot studies |
-| **Accessibility** | Works on ₹3,000 smartphones, offline mode |
-
-### Social Impact
-
-#### ✅ **Breaking the Language Barrier**
-- Students learn complex subjects (Physics, Chemistry, Math) in their **mother tongue**
-- Reduces cognitive load by 50% when learning in native language
-- Increases **retention and comprehension** dramatically
-
-#### ✅ **Democratizing Education**
-- **Free tier** for basic features (OCR + Translation)
-- **Premium tier** at ₹50/month (vs ₹5,000+ for tutors)
-- NGOs and government schools get **institutional discounts**
-
-#### ✅ **Empowering Teachers**
-- Reduces burden of translating content manually
-- Allows teachers to focus on **personalized mentoring**
-- Provides **analytics** on student struggles
-
-#### ✅ **Economic Mobility**
-- Better STEM education → Better job opportunities
-- Breaks cycle of poverty through **quality education access**
-- Enables rural students to compete with urban peers
+### Environmental Impact:
+- Preventive maintenance extends road lifespan by 30%
+- Reduces need for full road reconstruction (lower carbon footprint)
+- Optimized repair routes reduce municipality vehicle emissions
 
 ***
 
 ## 🛠️ Tech Stack
 
-### **Backend Architecture**
+### **Frontend**
+- **Mobile App**: Flutter / React Native (cross-platform)
+- **Web Dashboard**: React.js + Tailwind CSS
+- **Maps Integration**: Google Maps JavaScript API / Mapbox
+- **Real-time Updates**: Firebase Realtime Database
 
-```
-┌─────────────────────────────────────────────────┐
-│              BACKEND (FastAPI)                  │
-├─────────────────────────────────────────────────┤
-│  • Python 3.10+                                 │
-│  • FastAPI (REST API)                           │
-│  • Firebase Firestore (NoSQL Database)         │
-│  • Firebase Storage (Image Storage)            │
-│  • Pydantic (Data Validation)                  │
-└─────────────────────────────────────────────────┘
-```
+### **Backend**
+- **API Server**: Python Flask / FastAPI
+- **Database**: PostgreSQL (pothole data) + Firebase (real-time sync)
+- **Authentication**: Firebase Auth / JWT
+- **Cloud Hosting**: AWS EC2 / Google Cloud Run
+- **File Storage**: AWS S3 (for images)
 
 ### **AI/ML Pipeline**
+- **Object Detection**: YOLOv8 (Ultralytics) - Pre-trained + fine-tuned
+- **Depth Estimation**: MiDaS v3.1 (Monocular depth from single image)
+- **Severity Classifier**: Custom CNN (TensorFlow/PyTorch)
+- **Predictive Model**: XGBoost / Random Forest (risk zone prediction)
+- **Image Preprocessing**: OpenCV, PIL
+- **Model Serving**: TensorFlow Serving / ONNX Runtime
 
-```
-┌──────────────────────┬──────────────────────┬─────────────────────┐
-│   OCR ENGINE         │  TRANSLATION         │   AI TUTOR          │
-├──────────────────────┼──────────────────────┼─────────────────────┤
-│ • Tesseract OCR      │ • Google Translate   │ • OpenAI GPT-4o mini│
-│ • Google Vision API  │ • IndicTrans2        │ • RAG (Retrieval-   │
-│ • 98% accuracy       │   (AI4Bharat)        │   Augmented Gen.)   │
-│                      │ • Dialect support    │ • FAISS Vector DB   │
-│                      │                      │ • Sentence Trans.   │
-└──────────────────────┴──────────────────────┴─────────────────────┘
-```
+### **Data & Analytics**
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Plotly, Folium (heatmaps)
+- **Weather API**: OpenWeatherMap API
+- **Traffic Data**: Google Maps Traffic Layer API
 
-### **Frontend**
-
-```
-┌─────────────────────────────────────────────────┐
-│         FRONTEND (React + PWA)                  │
-├─────────────────────────────────────────────────┤
-│  • React 18+ with Vite                          │
-│  • Tailwind CSS (UI Styling)                   │
-│  • Zustand (State Management)                  │
-│  • Axios (API Communication)                   │
-│  • Progressive Web App (Offline Support)       │
-└─────────────────────────────────────────────────┘
-```
-
-### **Speech AI** (Optional)
-
-```
-┌──────────────────────┬──────────────────────┐
-│   SPEECH-TO-TEXT     │   TEXT-TO-SPEECH     │
-├──────────────────────┼──────────────────────┤
-│ • OpenAI Whisper     │ • gTTS (Google)      │
-│ • Indic languages    │ • IndicTTS           │
-│ • 95% accuracy       │ • Natural voices     │
-└──────────────────────┴──────────────────────┘
-```
-
-### **Infrastructure**
-
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Hosting** | Vercel (Frontend), Render (Backend) | Fast deployment |
-| **Database** | Firebase Firestore | Real-time NoSQL |
-| **Storage** | Firebase Storage | Image uploads |
-| **CDN** | Cloudflare | Fast content delivery |
-| **Monitoring** | Sentry, Firebase Analytics | Error tracking |
+### **DevOps**
+- **Containerization**: Docker
+- **CI/CD**: GitHub Actions
+- **Monitoring**: Prometheus + Grafana
+- **Version Control**: Git + GitHub
 
 ***
 
-## 🏗️ Architecture Diagram
-
-### **System Architecture**
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                     VIDYAMITRA PLATFORM                          │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌─────────────┐              HTTPS/JSON           ┌──────────┐ │
-│  │   STUDENT   │◄────────────────────────────────►│ BACKEND  │ │
-│  │   (Mobile/  │         REST API Calls            │ (FastAPI)│ │
-│  │   Desktop)  │                                   └────┬─────┘ │
-│  └─────────────┘                                        │       │
-│                                                          │       │
-│  ┌──────────────────────────────────────────────────────▼─────┐ │
-│  │              FIREBASE SERVICES                              │ │
-│  ├─────────────────────────────────────────────────────────────┤ │
-│  │  📦 Firestore (Database)    📁 Storage (Images)             │ │
-│  │  🔐 Authentication          📊 Analytics                    │ │
-│  └─────────────────────────────────────────────────────────────┘ │
-│                                                                  │
-│  ┌──────────────────────────────────────────────────────────────┐│
-│  │                   AI/ML PIPELINE                             ││
-│  ├──────────────────────────────────────────────────────────────┤│
-│  │                                                              ││
-│  │  STEP 1: OCR              STEP 2: TRANSLATION               ││
-│  │  ┌─────────────┐          ┌─────────────┐                  ││
-│  │  │ Tesseract   │──────►   │  Google     │                  ││
-│  │  │ Google      │          │  Translate  │                  ││
-│  │  │ Vision API  │          │  IndicTrans2│                  ││
-│  │  └─────────────┘          └─────────────┘                  ││
-│  │                                                              ││
-│  │  STEP 3: RAG (Context-Aware AI)                             ││
-│  │  ┌────────────────────────────────────────────────┐         ││
-│  │  │  1. Text Embedding (Sentence Transformers)     │         ││
-│  │  │  2. Vector Search (FAISS) → Find context       │         ││
-│  │  │  3. LLM Generation (GPT-4o mini) → Answer      │         ││
-│  │  └────────────────────────────────────────────────┘         ││
-│  │                                                              ││
-│  └──────────────────────────────────────────────────────────────┘│
-│                                                                  │
-└──────────────────────────────────────────────────────────────────┘
-```
-
-### **Data Flow: Student Journey**
-
-```
-1. UPLOAD TEXTBOOK
-   Student uploads image ──► Firebase Storage
-                       │
-                       └──► OCR Extraction (Tesseract/Google Vision)
-                                      │
-                                      ▼
-2. TEXT EXTRACTION                "Newton's First Law states that..."
-   Extracted text ──────────────► Saved to Firestore
-                                      │
-                                      ▼
-3. TRANSLATION
-   Select Language (Telugu) ─────► Google Translate API
-                                      │
-                                      ▼
-                              "న్యూటన్ మొదటి నియమం చెబుతుంది..."
-   Translated text ──────────────► Saved to Firestore
-                                      │
-                                      ▼
-4. AI Q&A (RAG PIPELINE)
-   Student asks: "ఉదాహరణ ఇవ్వండి?"
-                       │
-                       ├──► Embedding Generation (384-dim vector)
-                       │
-                       ├──► FAISS Search (find relevant textbook chunks)
-                       │
-                       ├──► Context Retrieval (top 3 similar paragraphs)
-                       │
-                       └──► GPT-4o mini (generates answer in Telugu)
-                                      │
-                                      ▼
-                       Answer: "ఉదాహరణ: బస్సు ఆగినప్పుడు..."
-   Q&A saved ────────────────────► Firestore (qa_history)
-```
-
-### **RAG Architecture (AI Tutor)**
+## 🏗️ Backend Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│              RAG: Retrieval-Augmented Generation            │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  INPUT: Student Question (Telugu)                          │
-│  "న్యూటన్ మూడవ నియమానికి ఉదాహరణ ఇవ్వండి"                  │
-│                      ↓                                      │
-│  ┌──────────────────────────────────────────────┐          │
-│  │ STEP 1: EMBEDDING GENERATION                 │          │
-│  │ • Sentence-BERT model                        │          │
-│  │ • Question → 384-dimensional vector          │          │
-│  │ • [0.23, -0.15, 0.89, 0.42, ...]             │          │
-│  └──────────────────┬───────────────────────────┘          │
-│                     ↓                                       │
-│  ┌──────────────────────────────────────────────┐          │
-│  │ STEP 2: VECTOR SIMILARITY SEARCH             │          │
-│  │ • FAISS Index (stores all textbook chunks)   │          │
-│  │ • Cosine similarity search                   │          │
-│  │ • Retrieve top 3 most relevant chunks        │          │
-│  └──────────────────┬───────────────────────────┘          │
-│                     ↓                                       │
-│  ┌──────────────────────────────────────────────┐          │
-│  │ STEP 3: CONTEXT RETRIEVAL                    │          │
-│  │ Textbook Context Retrieved:                  │          │
-│  │ "Newton's Third Law: For every action,       │          │
-│  │  there is an equal and opposite reaction..." │          │
-│  └──────────────────┬───────────────────────────┘          │
-│                     ↓                                       │
-│  ┌──────────────────────────────────────────────┐          │
-│  │ STEP 4: LLM GENERATION                       │          │
-│  │ • OpenAI GPT-4o mini                         │          │
-│  │ • Prompt: [Context + Question + Language]    │          │
-│  │ • Generate answer in Telugu                  │          │
-│  └──────────────────┬───────────────────────────┘          │
-│                     ↓                                       │
-│  OUTPUT: AI Answer (Telugu)                                │
-│  "ఉదాహరణ: బస్సు అకస్మాత్తుగా ఆగినప్పుడు, మనం ముందుకు        │
-│   వంగుతాం. ఇది న్యూటన్ మూడవ నియమం యొక్క ఉదాహరణ..."       │
-│                                                             │
-│  ✅ BENEFITS:                                               │
-│  • No hallucinations (answers from textbook only)          │
-│  • Context-aware and curriculum-aligned                    │
-│  • Supports regional language generation                   │
+│                     MOBILE APP (Flutter)                     │
+│  Camera Feed → Background Detection → GPS Tagging → Upload   │
+└────────────┬────────────────────────────────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    API GATEWAY (Flask/FastAPI)               │
+│         /detect  |  /verify  |  /severity  |  /heatmap      │
+└────────────┬────────────────────────────────────────────────┘
+             │
+        ┌────┴────┐
+        ▼         ▼
+┌──────────────┐  ┌──────────────────────────────────────────┐
+│ ML INFERENCE │  │         DATABASE LAYER                   │
+│   PIPELINE   │  │  ┌──────────────┐  ┌─────────────────┐  │
+│              │  │  │ PostgreSQL   │  │ Firebase        │  │
+│ YOLOv8       │◄─┤  │ - Potholes   │  │ - Real-time     │  │
+│ Detection    │  │  │ - Users      │  │ - Notifications │  │
+│              │  │  │ - Verifications│ │ - Sync          │  │
+│ MiDaS Depth  │  │  └──────────────┘  └─────────────────┘  │
+│ Estimation   │  │                                          │
+│              │  │  ┌──────────────┐  ┌─────────────────┐  │
+│ Severity     │  │  │ Redis Cache  │  │ AWS S3          │  │
+│ Classifier   │  │  │ - API Cache  │  │ - Images        │  │
+│              │  │  │ - Session    │  │ - Model Files   │  │
+└──────┬───────┘  │  └──────────────┘  └─────────────────┘  │
+       │          └──────────────────────────────────────────┘
+       │
+       ▼
+┌─────────────────────────────────────────────────────────────┐
+│              ANALYTICS & PREDICTION ENGINE                   │
+│  Risk Scoring → Heatmap Generation → Predictive Model       │
+│  (XGBoost + Historical Data + Weather + Traffic)            │
+└────────────┬────────────────────────────────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────────────────────────────────┐
+│               MUNICIPALITY DASHBOARD (React)                 │
+│  Ward-wise View | Urgency Sorting | Cost Analysis | Export  │
 └─────────────────────────────────────────────────────────────┘
+```
+
+### **Data Flow:**
+
+1. **Detection Phase**:
+   - User's phone camera captures frames every 2 seconds
+   - YOLOv8 model runs on-device (TensorFlow Lite) or sends to server
+   - Confidence score >0.6 triggers pothole detection
+   - GPS coordinates + timestamp + image uploaded to backend
+
+2. **Classification Phase**:
+   - MiDaS depth estimation calculates pothole depth
+   - CNN severity classifier assigns Small/Medium/Large label
+   - Risk score computed using traffic density + road type + weather
+
+3. **Verification Phase**:
+   - Nearby users receive notification to verify detection
+   - 3+ verifications → "Confirmed" status
+   - False reports reduce user credibility score
+
+4. **Action Phase**:
+   - Confirmed potholes appear on municipality dashboard
+   - Auto-prioritized by urgency score
+   - API integration with GHMC complaint system
+
+***
+
+## 🏛️ Architecture Diagram
+
+```
+                    ┌───────────────────────────────────┐
+                    │   FRONTEND LAYER                  │
+                    │                                   │
+                    │  ┌─────────────┐  ┌────────────┐ │
+                    │  │ Mobile App  │  │ Web Portal │ │
+                    │  │  (Flutter)  │  │  (React)   │ │
+                    │  └──────┬──────┘  └─────┬──────┘ │
+                    └─────────┼────────────────┼────────┘
+                              │                │
+                    ┌─────────┴────────────────┴────────┐
+                    │      LOAD BALANCER (Nginx)        │
+                    └─────────┬─────────────────────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            │                 │                 │
+    ┌───────▼───────┐ ┌───────▼───────┐ ┌──────▼──────┐
+    │ API Server 1  │ │ API Server 2  │ │API Server 3 │
+    │   (FastAPI)   │ │   (FastAPI)   │ │  (FastAPI)  │
+    └───────┬───────┘ └───────┬───────┘ └──────┬──────┘
+            │                 │                 │
+            └─────────────────┼─────────────────┘
+                              │
+              ┌───────────────┴───────────────┐
+              │                               │
+    ┌─────────▼──────────┐        ┌──────────▼─────────┐
+    │  ML INFERENCE      │        │   DATA LAYER       │
+    │  ┌──────────────┐  │        │  ┌──────────────┐  │
+    │  │ YOLOv8       │  │        │  │ PostgreSQL   │  │
+    │  │ (ONNX)       │  │        │  │ (Master)     │  │
+    │  └──────────────┘  │        │  └──────┬───────┘  │
+    │  ┌──────────────┐  │        │         │          │
+    │  │ MiDaS        │  │        │  ┌──────▼───────┐  │
+    │  │ (Depth)      │  │        │  │ PostgreSQL   │  │
+    │  └──────────────┘  │        │  │ (Replica)    │  │
+    │  ┌──────────────┐  │        │  └──────────────┘  │
+    │  │ Severity CNN │  │        │  ┌──────────────┐  │
+    │  └──────────────┘  │        │  │ Redis Cache  │  │
+    └────────────────────┘        │  └──────────────┘  │
+                                  │  ┌──────────────┐  │
+                                  │  │ Firebase     │  │
+                                  │  │ Realtime DB  │  │
+                                  │  └──────────────┘  │
+                                  └────────────────────┘
+                                           │
+                              ┌────────────┴────────────┐
+                              │   ANALYTICS ENGINE      │
+                              │  ┌──────────────────┐   │
+                              │  │ XGBoost Model    │   │
+                              │  │ (Prediction)     │   │
+                              │  └──────────────────┘   │
+                              │  ┌──────────────────┐   │
+                              │  │ Heatmap Generator│   │
+                              │  └──────────────────┘   │
+                              └─────────────────────────┘
 ```
 
 ***
 
-## 🌟 Why VidyaMitra is Unique
+## 🌟 Why It Is Unique
 
-| Feature | VidyaMitra | Google Translate | ChatGPT | Existing EdTech |
-|---------|-----------|------------------|---------|-----------------|
-| **OCR Full Textbook** | ✅ Scan entire books | ❌ Manual text only | ❌ No OCR | ❌ Pre-made content only |
-| **Dialect Support** | ✅ Telangana vs Coastal Telugu | ❌ Standard only | ❌ Generic | ❌ Standard language |
-| **Context-Aware AI** | ✅ RAG from textbook | ❌ Not applicable | ❌ Generic web knowledge | ❌ Pre-recorded videos |
-| **Auto Study Materials** | ✅ Notes, flashcards, quizzes | ❌ | ❌ | ❌ Manual creation |
-| **Offline Mode** | ✅ Download chapters | ❌ | ❌ | ❌ Internet required |
-| **Voice Interface** | ✅ STT + TTS in regional languages | ✅ TTS only | ✅ English only | ❌ |
-| **Cost** | ₹0 (Free tier) / ₹50/month | Free | $20/month | ₹5,000+/month |
-| **Target Audience** | Rural students | Everyone | Everyone | Urban students |
+### **Compared to Existing Solutions:**
 
-### **Our Competitive Advantage**
+| Feature | T-RACSHA (Govt) | Waze | iWatchRoad | **SnapFix AI** |
+|---------|----------------|------|-----------|-----------------|
+| Detection Method | Manual | Manual | Dashcam | ✅ **Auto (Phone)** |
+| User Effort | High | Medium | Medium | ✅ **Zero** |
+| Hardware Required | Smartphone | Smartphone | Dashcam | ✅ **Smartphone Only** |
+| AI Detection | ❌ | ❌ | ✅ | ✅ |
+| Severity Classification | ❌ | ❌ | ❌ | ✅ |
+| Community Verification | ❌ | Basic | ❌ | ✅ **Gamified** |
+| Predictive Analytics | ❌ | ❌ | ❌ | ✅ |
+| Municipality Integration | Manual | ❌ | ❌ | ✅ **API + Dashboard** |
+| Spam Prevention | ❌ | Basic | ❌ | ✅ **Credibility System** |
+| Cost-Benefit Analysis | ❌ | ❌ | ❌ | ✅ |
 
-1. **Complete Solution**: OCR → Translation → AI Tutor → Study Materials (all in one platform)
-2. **Hyperlocal**: Dialect-specific translation (e.g., Bhojpuri Hindi vs Standard Hindi)
-3. **Curriculum-Aligned**: RAG ensures answers from textbook, not generic web
-4. **Accessibility-First**: Voice interface, offline mode, works on ₹3,000 phones
-5. **Affordable**: 100x cheaper than private tuition
+### **Core Innovations:**
 
----
+1. **Zero-Friction Detection**: First solution to enable truly passive, background detection without user intervention
+
+2. **Predictive Maintenance**: Only platform that predicts where potholes will form next using ML on historical + environmental data
+
+3. **Community Intelligence**: Gamified verification system with credibility scoring prevents spam while increasing engagement
+
+4. **Decision-Ready Data**: Provides municipalities with urgency scores, cost estimates, and repair prioritization - not just location data
+
+5. **Hyperlocal Optimization**: Hyderabad-specific features (GHMC integration, local landmarks, Telugu support) vs generic India-wide tools
+
+***
 
 ## 🌍 Social Impact & Alignment
 
-### **UN Sustainable Development Goals**
+### **UN Sustainable Development Goals (SDGs):**
 
-| SDG | Alignment | How VidyaMitra Contributes |
-|-----|-----------|---------------------------|
-| **SDG 4: Quality Education** | ⭐⭐⭐⭐⭐ | Ensures inclusive and equitable quality education for all |
-| **SDG 10: Reduced Inequalities** | ⭐⭐⭐⭐⭐ | Reduces urban-rural education gap |
-| **SDG 5: Gender Equality** | ⭐⭐⭐⭐ | Empowers girls in rural areas with equal access to education |
-| **SDG 8: Decent Work** | ⭐⭐⭐ | Better education → Better jobs → Economic growth |
+✅ **SDG 3 - Good Health & Well-being**: Reduce road accident injuries/deaths  
+✅ **SDG 9 - Industry, Innovation & Infrastructure**: Smart infrastructure monitoring  
+✅ **SDG 11 - Sustainable Cities**: Make cities safer, resilient, and sustainable  
+✅ **SDG 17 - Partnerships**: Citizen-government collaboration for civic improvement
 
-### **National Education Policy (NEP) 2020**
+### **Social Impact Metrics:**
 
-✅ **Mother Tongue-Based Education**: NEP mandates learning in regional languages until Grade 5, VidyaMitra extends this to Grade 12
+**For Citizens:**
+- Save ₹1000-3000/year in vehicle repair costs per person
+- Reduce commute stress and accident risk
+- Empower civic participation through gamification
 
-✅ **Technology Integration**: Aligns with NEP's vision of AI-powered personalised learning
+**For Government:**
+- Enable data-driven budgeting (allocate ₹50 lakhs where needed vs uniform distribution)
+- Improve accountability and transparency
+- Reduce complaint handling workload by 70%
 
-✅ **Equitable & Inclusive**: Directly addresses NEP's goal of bridging educational divides
-
-### **Digital India Initiative**
-
-✅ **Rural Digital Access**: Works on low-cost smartphones, offline mode for poor connectivity
-
-✅ **Language Localization**: AI-powered services in 12+ Indian languages
-
-✅ **Government Partnership Potential**: Can integrate with State Education Boards
-
-***
-
-## 📈 Market Opportunity
-
-### **Market Size**
-
-| Segment | Size | VidyaMitra Opportunity |
-|---------|------|----------------------|
-| **Total Students in India** | 250M | Primary target |
-| **Rural/Semi-Urban Students** | 180M | Core focus (72%) |
-| **Students struggling with English** | 175M (70%) | Immediate need |
-| **Government School Students** | 130M | B2G opportunity |
-| **EdTech Market (India)** | $10.4B by 2025 | 36.5% CAGR |
-| **Vernacular EdTech Market** | $3B (untapped) | Blue ocean |
-
-### **Revenue Model**
-
-#### **B2C (Direct to Students)**
-- **Freemium**: OCR + Basic Translation (Free)
-- **Premium**: AI Tutor + Quizzes + Offline Mode (₹50/month = $0.60)
-- **Annual Plan**: ₹500/year (₹42/month)
-
-**Target**: 10M paid users in 3 years = ₹500 Crore revenue
-
-#### **B2G (Government Partnerships)**
-- **State Education Boards**: Bulk licenses at ₹20/student/year
-- **Digital India Funds**: Government subsidizes for BPL students
-- **MHRD Contracts**: Integration with DIKSHA/SWAYAM platforms
-
-**Target**: 50M government students = ₹1,000 Crore revenue
-
-#### **B2B (NGOs & EdTech Platforms)**
-- **NGOs**: Institutional licenses at ₹10/student/year
-- **EdTech Platforms**: White-label API access (₹5L-50L/year)
-- **Publishing Houses**: Textbook digitization service (₹1L per book)
-
-**Target**: 20M students via partnerships = ₹200 Crore revenue
-
-### **Total Addressable Market (TAM)**
-- **TAM**: 250M students × ₹600/year = ₹150,000 Crore ($18B)
-- **SAM (Serviceable)**: 100M students × ₹300/year = ₹30,000 Crore ($3.6B)
-- **SOM (Obtainable)**: 10M students in Year 3 = ₹500 Crore ($60M)
-
-***
-
-
-<div align="center">
-
-### **VidyaMitra - विद्या मित्र**
-
-*Empowering 250M+ Indian Students, One Textbook at a Time*
-
-</div>
-
-[1](https://github.com/h)
+**For Society:**
+- Prevent 1000+ accidents annually in Hyderabad alone
+- Create safer roads for vulnerable groups (two-wheeler riders, cyclists)
+- Build citizen-government trust through visible action
