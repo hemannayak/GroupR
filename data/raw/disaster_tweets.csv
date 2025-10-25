@@ -1,0 +1,201 @@
+id,keyword,location,text,target,timestamp
+tweet_0,flood,Ahmedabad,"Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-10-21T11:38:27.355695
+tweet_1,food,,Just had an amazing meal at the new restaurant.,0,2025-10-05T15:38:27.355717
+tweet_2,earthquake,Ahmedabad,"Aftershocks continue, people scared to go back inside",1,2025-10-20T01:38:27.355725
+tweet_3,entertainment,Ahmedabad,"New movie release this Friday, can't wait!",0,2025-10-08T08:38:27.355733
+tweet_4,food,,Just had an amazing meal at the new restaurant.,0,2025-09-28T05:38:27.355739
+tweet_5,flood,Ahmedabad,"Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-14T13:38:27.355745
+tweet_6,food,Mumbai,Morning coffee tastes extra good today,0,2025-10-23T19:38:27.355751
+tweet_7,weather,,Beautiful day today! Weather is perfect.,0,2025-10-11T06:38:27.355756
+tweet_8,entertainment,Hyderabad,Excited about the upcoming concert next week!,0,2025-10-09T12:38:27.355761
+tweet_9,weather,,Beautiful day today! Weather is perfect.,0,2025-10-03T22:38:27.355769
+tweet_10,flood,Ahmedabad,"UPDATE: Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-09-30T06:38:27.355775
+tweet_11,fire,,"ALERT: Smoke filling the air, visibility near zero",1,2025-10-17T08:38:27.355782
+tweet_12,flood,,"UPDATE: Water reached first floor, need boats for rescue",1,2025-10-03T06:38:27.355788
+tweet_13,storm,Kolkata,"UPDATE: Storm destroyed several houses, people need shelter and supplies.",1,2025-10-23T11:38:27.355793
+tweet_14,flood,,"URGENT: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-01T06:38:27.355800
+tweet_15,landslide,,URGENT: Heavy rains causing landslides in hilly areas,1,2025-09-29T00:38:27.355806
+tweet_16,food,,Morning coffee tastes extra good today,0,2025-09-30T11:38:27.355811
+tweet_17,food,Pune,Just had an amazing meal at the new restaurant.,0,2025-10-21T07:38:27.355816
+tweet_18,entertainment,Chennai,Excited about the upcoming concert next week!,0,2025-10-15T06:38:27.355822
+tweet_19,fire,,"CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-10-01T04:38:27.355828
+tweet_20,landslide,,"URGENT: Landslide blocked the highway, multiple vehicles trapped",1,2025-10-03T14:38:27.355834
+tweet_21,flood,Bangalore,"UPDATE: Flash flood warning! River overflowing, evacuate immediately",1,2025-10-08T15:38:27.355840
+tweet_22,fire,,"UPDATE: Smoke filling the air, visibility near zero",1,2025-10-03T11:38:27.355846
+tweet_23,flood,Ahmedabad,"ALERT: Flash flood warning! River overflowing, evacuate immediately",1,2025-10-21T07:38:27.355852
+tweet_24,traffic,Pune,Traffic is heavy today but moving smoothly,0,2025-10-16T19:38:27.355857
+tweet_25,traffic,,Traffic is heavy today but moving smoothly,0,2025-10-16T02:38:27.355863
+tweet_26,weather,Mumbai,Great weather for a picnic this weekend,0,2025-10-20T00:38:27.355868
+tweet_27,weather,Kolkata,Great weather for a picnic this weekend,0,2025-10-17T22:38:27.355874
+tweet_28,storm,Pune,"ALERT: Hurricane approaching, strong winds already causing damage.",1,2025-10-18T23:38:27.355880
+tweet_29,fire,Pune,"BREAKING: Smoke filling the air, visibility near zero",1,2025-10-02T04:38:27.355887
+tweet_30,landslide,Bangalore,Heavy rains causing landslides in hilly areas,1,2025-10-09T09:38:27.355893
+tweet_31,landslide,Delhi,"ALERT: Landslide blocked the highway, multiple vehicles trapped",1,2025-10-18T04:38:27.355899
+tweet_32,flood,,"UPDATE: Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-10-12T06:38:27.355905
+tweet_33,storm,,"ALERT: Hurricane approaching, strong winds already causing damage.",1,2025-10-14T15:38:27.355911
+tweet_34,work,Bangalore,"Finished my project on time, feeling accomplished",0,2025-10-21T10:38:27.355916
+tweet_35,earthquake,Kolkata,"Earthquake reported in downtown area, magnitude 6.5",1,2025-10-06T19:38:27.355923
+tweet_36,storm,,"UPDATE: Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-09-28T16:38:27.355930
+tweet_37,storm,Hyderabad,"ALERT: Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-11T20:38:27.355936
+tweet_38,earthquake,,"BREAKING: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-11T02:38:27.355942
+tweet_39,storm,,"URGENT: Hurricane approaching, strong winds already causing damage.",1,2025-09-25T03:38:27.355948
+tweet_40,storm,,"Tornado warning issued, take shelter immediately",1,2025-10-21T02:38:27.355953
+tweet_41,fire,Ahmedabad,"UPDATE: Smoke filling the air, visibility near zero",1,2025-10-02T13:38:27.355959
+tweet_42,landslide,,"URGENT: Mudslide destroyed homes, people missing",1,2025-10-15T09:38:27.355965
+tweet_43,earthquake,Chennai,"URGENT: Massive earthquake just hit! Buildings shaking, people running outside. Need help!",1,2025-10-22T07:38:27.355971
+tweet_44,storm,Chennai,"URGENT: Hurricane approaching, strong winds already causing damage.",1,2025-09-25T02:38:27.355977
+tweet_45,food,,Morning coffee tastes extra good today,0,2025-10-22T19:38:27.355982
+tweet_46,storm,,"ALERT: Tornado warning issued, take shelter immediately",1,2025-10-18T02:38:27.355988
+tweet_47,entertainment,Hyderabad,"New movie release this Friday, can't wait!",0,2025-10-18T00:38:27.355993
+tweet_48,weather,Bangalore,Beautiful day today! Weather is perfect.,0,2025-10-13T21:38:27.355999
+tweet_49,fire,Ahmedabad,"UPDATE: Smoke filling the air, visibility near zero",1,2025-10-14T21:38:27.356005
+tweet_50,landslide,Chennai,ALERT: Heavy rains causing landslides in hilly areas,1,2025-10-04T14:38:27.356012
+tweet_51,storm,Delhi,"URGENT: Tornado warning issued, take shelter immediately",1,2025-10-13T07:38:27.356018
+tweet_52,flood,Hyderabad,"Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-09-26T23:38:27.356024
+tweet_53,entertainment,Kolkata,"New movie release this Friday, can't wait!",0,2025-10-16T17:38:27.356030
+tweet_54,earthquake,Pune,"Earthquake reported in downtown area, magnitude 6.5",1,2025-09-29T22:38:27.356036
+tweet_55,earthquake,Mumbai,"Aftershocks continue, people scared to go back inside",1,2025-10-09T17:38:27.356042
+tweet_56,weather,Kolkata,Great weather for a picnic this weekend,0,2025-10-22T16:38:27.356048
+tweet_57,flood,,"Water reached first floor, need boats for rescue",1,2025-09-25T11:38:27.356054
+tweet_58,fire,Hyderabad,ALERT: Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-09-26T17:38:27.356060
+tweet_59,fire,Kolkata,"Forest fire approaching residential area, evacuations underway",1,2025-10-16T12:38:27.356066
+tweet_60,fire,Ahmedabad,"URGENT: CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-10-04T09:38:27.356072
+tweet_61,flood,Pune,"BREAKING: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-11T15:38:27.356079
+tweet_62,fire,,"ALERT: Building on fire, smoke everywhere. Fire department on scene.",1,2025-10-11T09:38:27.356085
+tweet_63,flood,Delhi,"Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-10-18T09:38:27.356091
+tweet_64,earthquake,,"URGENT: Earthquake reported in downtown area, magnitude 6.5",1,2025-09-28T08:38:27.356097
+tweet_65,flood,Pune,"Flash flood warning! River overflowing, evacuate immediately",1,2025-10-23T23:38:27.356104
+tweet_66,food,Hyderabad,Just had an amazing meal at the new restaurant.,0,2025-10-05T16:38:27.356110
+tweet_67,food,Kolkata,Just had an amazing meal at the new restaurant.,0,2025-10-18T13:38:27.356115
+tweet_68,earthquake,Hyderabad,"URGENT: Aftershocks continue, people scared to go back inside",1,2025-10-04T14:38:27.356122
+tweet_69,fire,Ahmedabad,"Building on fire, smoke everywhere. Fire department on scene.",1,2025-10-04T18:38:27.356128
+tweet_70,fire,Mumbai,ALERT: Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-10-23T17:38:27.356134
+tweet_71,entertainment,Chennai,"New movie release this Friday, can't wait!",0,2025-10-21T13:38:27.356140
+tweet_72,fire,Delhi,"UPDATE: Smoke filling the air, visibility near zero",1,2025-10-08T15:38:27.356146
+tweet_73,flood,Chennai,"BREAKING: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-03T07:38:27.356152
+tweet_74,work,,"Finished my project on time, feeling accomplished",0,2025-10-19T23:38:27.356158
+tweet_75,storm,,"Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-21T20:38:27.356164
+tweet_76,fire,,"ALERT: Forest fire approaching residential area, evacuations underway",1,2025-10-21T21:38:27.356170
+tweet_77,work,Ahmedabad,"Finished my project on time, feeling accomplished",0,2025-10-03T08:38:27.356175
+tweet_78,food,Ahmedabad,Just had an amazing meal at the new restaurant.,0,2025-10-02T06:38:27.356181
+tweet_79,flood,Hyderabad,"URGENT: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-03T02:38:27.356187
+tweet_80,weather,Bangalore,Great weather for a picnic this weekend,0,2025-09-25T16:38:27.356192
+tweet_81,food,Mumbai,Just had an amazing meal at the new restaurant.,0,2025-10-05T06:38:27.356199
+tweet_82,landslide,,"URGENT: URGENT: Mudslide destroyed homes, people missing",1,2025-10-05T12:38:27.356205
+tweet_83,fire,,"Forest fire approaching residential area, evacuations underway",1,2025-10-09T23:38:27.356211
+tweet_84,flood,,"Flash flood warning! River overflowing, evacuate immediately",1,2025-10-08T17:38:27.356217
+tweet_85,fire,Ahmedabad,"BREAKING: Forest fire approaching residential area, evacuations underway",1,2025-09-27T15:38:27.356223
+tweet_86,storm,Pune,"BREAKING: Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-03T21:38:27.356230
+tweet_87,fire,Chennai,"Forest fire approaching residential area, evacuations underway",1,2025-10-07T13:38:27.356236
+tweet_88,entertainment,,Excited about the upcoming concert next week!,0,2025-10-19T03:38:27.356242
+tweet_89,fire,Delhi,"URGENT: Forest fire approaching residential area, evacuations underway",1,2025-10-08T05:38:27.356247
+tweet_90,earthquake,Chennai,"BREAKING: Massive earthquake just hit! Buildings shaking, people running outside. Need help!",1,2025-10-16T09:38:27.356254
+tweet_91,flood,,"BREAKING: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-18T12:38:27.356260
+tweet_92,flood,,"ALERT: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-09-29T20:38:27.356266
+tweet_93,fire,Hyderabad,"Forest fire approaching residential area, evacuations underway",1,2025-09-29T12:38:27.356273
+tweet_94,storm,Kolkata,"BREAKING: Storm destroyed several houses, people need shelter and supplies.",1,2025-10-25T19:38:27.356279
+tweet_95,earthquake,Kolkata,"ALERT: Massive earthquake just hit! Buildings shaking, people running outside. Need help!",1,2025-10-18T11:38:27.356286
+tweet_96,landslide,Kolkata,"URGENT: Mudslide destroyed homes, people missing",1,2025-10-13T07:38:27.356293
+tweet_97,food,Hyderabad,Just had an amazing meal at the new restaurant.,0,2025-10-08T23:38:27.356299
+tweet_98,landslide,Delhi,"ALERT: URGENT: Mudslide destroyed homes, people missing",1,2025-10-17T22:38:27.356306
+tweet_99,storm,Bangalore,"Storm destroyed several houses, people need shelter and supplies.",1,2025-09-27T18:38:27.356312
+tweet_100,landslide,,UPDATE: Heavy rains causing landslides in hilly areas,1,2025-09-25T14:38:27.356319
+tweet_101,food,Mumbai,Just had an amazing meal at the new restaurant.,0,2025-09-27T20:38:27.356327
+tweet_102,fire,Bangalore,"Forest fire approaching residential area, evacuations underway",1,2025-10-05T20:38:27.356334
+tweet_103,flood,,"URGENT: Water reached first floor, need boats for rescue",1,2025-10-20T20:38:27.356340
+tweet_104,traffic,,Traffic is heavy today but moving smoothly,0,2025-10-20T09:38:27.356345
+tweet_105,landslide,,"URGENT: Landslide blocked the highway, multiple vehicles trapped",1,2025-10-14T08:38:27.356351
+tweet_106,fire,Ahmedabad,"URGENT: Forest fire approaching residential area, evacuations underway",1,2025-10-03T03:38:27.356356
+tweet_107,earthquake,Pune,"URGENT: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-09-25T11:38:27.356363
+tweet_108,fire,Pune,"URGENT: CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-10-01T11:38:27.356368
+tweet_109,flood,Kolkata,"Flash flood warning! River overflowing, evacuate immediately",1,2025-10-24T13:38:27.356375
+tweet_110,earthquake,Hyderabad,"UPDATE: Felt strong tremors, some damage to buildings. Everyone safe so far.",1,2025-10-05T18:38:27.356381
+tweet_111,fire,Ahmedabad,"URGENT: Smoke filling the air, visibility near zero",1,2025-09-28T16:38:27.356387
+tweet_112,landslide,,BREAKING: Heavy rains causing landslides in hilly areas,1,2025-10-19T17:38:27.356394
+tweet_113,storm,Ahmedabad,"BREAKING: Storm destroyed several houses, people need shelter and supplies.",1,2025-10-16T05:38:27.356399
+tweet_114,earthquake,Bangalore,"URGENT: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-22T13:38:27.356406
+tweet_115,landslide,Bangalore,URGENT: Heavy rains causing landslides in hilly areas,1,2025-10-11T08:38:27.356412
+tweet_116,entertainment,Chennai,Excited about the upcoming concert next week!,0,2025-10-20T07:38:27.356418
+tweet_117,fire,Mumbai,"ALERT: Smoke filling the air, visibility near zero",1,2025-10-19T05:38:27.356424
+tweet_118,earthquake,Delhi,"Aftershocks continue, people scared to go back inside",1,2025-09-26T21:38:27.356430
+tweet_119,earthquake,Chennai,"BREAKING: Earthquake reported in downtown area, magnitude 6.5",1,2025-10-12T17:38:27.356436
+tweet_120,landslide,Kolkata,"URGENT: Mudslide destroyed homes, people missing",1,2025-10-17T18:38:27.356443
+tweet_121,storm,Bangalore,"Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-23T23:38:27.356449
+tweet_122,entertainment,,"New movie release this Friday, can't wait!",0,2025-09-27T01:38:27.356454
+tweet_123,food,,Just had an amazing meal at the new restaurant.,0,2025-10-19T19:38:27.356459
+tweet_124,flood,Pune,"UPDATE: Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-10-14T13:38:27.356465
+tweet_125,earthquake,,"ALERT: Massive earthquake just hit! Buildings shaking, people running outside. Need help!",1,2025-10-14T14:38:27.356471
+tweet_126,weather,Kolkata,Beautiful day today! Weather is perfect.,0,2025-10-07T05:38:27.356476
+tweet_127,food,Delhi,Just had an amazing meal at the new restaurant.,0,2025-09-27T07:38:27.356482
+tweet_128,storm,Delhi,"Storm destroyed several houses, people need shelter and supplies.",1,2025-10-02T09:38:27.356488
+tweet_129,work,Chennai,"Finished my project on time, feeling accomplished",0,2025-10-24T06:38:27.356494
+tweet_130,flood,Chennai,"URGENT: Severe flooding in downtown area. Water level rising fast, need rescue teams!",1,2025-10-18T01:38:27.356501
+tweet_131,earthquake,Mumbai,"URGENT: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-16T18:38:27.356507
+tweet_132,fire,Ahmedabad,"BREAKING: Smoke filling the air, visibility near zero",1,2025-10-13T10:38:27.356513
+tweet_133,fire,Pune,"URGENT: Smoke filling the air, visibility near zero",1,2025-09-30T03:38:27.356519
+tweet_134,earthquake,Ahmedabad,"UPDATE: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-15T13:38:27.356526
+tweet_135,flood,Bangalore,"Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-21T11:38:27.356532
+tweet_136,earthquake,,"ALERT: Earthquake reported in downtown area, magnitude 6.5",1,2025-10-19T05:38:27.356538
+tweet_137,earthquake,,"ALERT: Aftershocks continue, people scared to go back inside",1,2025-10-12T10:38:27.356543
+tweet_138,flood,,"BREAKING: Flash flood warning! River overflowing, evacuate immediately",1,2025-10-11T04:38:27.356549
+tweet_139,storm,,"URGENT: Tornado warning issued, take shelter immediately",1,2025-10-13T16:38:27.356555
+tweet_140,storm,Mumbai,"URGENT: Tornado warning issued, take shelter immediately",1,2025-09-30T10:38:27.356560
+tweet_141,entertainment,,Excited about the upcoming concert next week!,0,2025-10-07T10:38:27.356566
+tweet_142,flood,Hyderabad,"BREAKING: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-22T11:38:27.356571
+tweet_143,weather,Ahmedabad,Great weather for a picnic this weekend,0,2025-10-24T09:38:27.356577
+tweet_144,earthquake,Pune,"BREAKING: Felt strong tremors, some damage to buildings. Everyone safe so far.",1,2025-10-03T14:38:27.356583
+tweet_145,landslide,,"UPDATE: Landslide blocked the highway, multiple vehicles trapped",1,2025-09-28T19:38:27.356589
+tweet_146,earthquake,Hyderabad,"URGENT: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-11T01:38:27.356595
+tweet_147,storm,,"Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-24T02:38:27.356601
+tweet_148,storm,Kolkata,"BREAKING: Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-09-25T18:38:27.356607
+tweet_149,weather,Chennai,Beautiful day today! Weather is perfect.,0,2025-10-04T15:38:27.356696
+tweet_150,entertainment,Bangalore,"New movie release this Friday, can't wait!",0,2025-09-25T03:38:27.356701
+tweet_151,fire,,"CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-10-18T23:38:27.356707
+tweet_152,flood,Kolkata,"Water reached first floor, need boats for rescue",1,2025-09-28T14:38:27.356713
+tweet_153,fire,,"Building on fire, smoke everywhere. Fire department on scene.",1,2025-10-11T01:38:27.356719
+tweet_154,fire,Chennai,"ALERT: Building on fire, smoke everywhere. Fire department on scene.",1,2025-10-17T12:38:27.356729
+tweet_155,fire,Bangalore,Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-10-22T02:38:27.356735
+tweet_156,flood,,"Flash flood warning! River overflowing, evacuate immediately",1,2025-09-27T16:38:27.356741
+tweet_157,landslide,Delhi,"URGENT: Mudslide destroyed homes, people missing",1,2025-10-16T06:38:27.356749
+tweet_158,entertainment,Mumbai,Excited about the upcoming concert next week!,0,2025-10-14T20:38:27.356755
+tweet_159,flood,,"Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-11T12:38:27.356761
+tweet_160,earthquake,Ahmedabad,"URGENT: Felt strong tremors, some damage to buildings. Everyone safe so far.",1,2025-10-17T08:38:27.356766
+tweet_161,fire,Kolkata,Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-10-20T12:38:27.356773
+tweet_162,food,,Just had an amazing meal at the new restaurant.,0,2025-10-17T03:38:27.356778
+tweet_163,earthquake,,"BREAKING: Felt strong tremors, some damage to buildings. Everyone safe so far.",1,2025-10-12T20:38:27.356784
+tweet_164,flood,Hyderabad,"URGENT: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-19T18:38:27.356790
+tweet_165,flood,Chennai,"BREAKING: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-05T01:38:27.356796
+tweet_166,storm,,"Severe storm, trees down, power lines damaged. Stay indoors!",1,2025-10-04T23:38:27.356802
+tweet_167,entertainment,Hyderabad,"New movie release this Friday, can't wait!",0,2025-10-23T15:38:27.356807
+tweet_168,fire,Pune,"CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-10-12T03:38:27.356813
+tweet_169,earthquake,,"ALERT: Aftershocks continue, people scared to go back inside",1,2025-10-22T00:38:27.356819
+tweet_170,earthquake,Chennai,"UPDATE: Earthquake reported in downtown area, magnitude 6.5",1,2025-10-23T14:38:27.356825
+tweet_171,fire,,"UPDATE: Smoke filling the air, visibility near zero",1,2025-10-23T20:38:27.356831
+tweet_172,earthquake,Delhi,"UPDATE: URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-04T06:38:27.356836
+tweet_173,flood,Chennai,"UPDATE: Water reached first floor, need boats for rescue",1,2025-10-05T06:38:27.356843
+tweet_174,traffic,Chennai,Traffic is heavy today but moving smoothly,0,2025-10-05T06:38:27.356849
+tweet_175,flood,,"ALERT: Water reached first floor, need boats for rescue",1,2025-09-27T09:38:27.356855
+tweet_176,work,Hyderabad,"Finished my project on time, feeling accomplished",0,2025-09-25T11:38:27.356860
+tweet_177,flood,Kolkata,"URGENT: Flash flood warning! River overflowing, evacuate immediately",1,2025-10-16T13:38:27.356866
+tweet_178,landslide,Delhi,"Landslide blocked the highway, multiple vehicles trapped",1,2025-10-06T11:38:27.356872
+tweet_179,storm,Delhi,"Heavy rain and winds, flooding expected",1,2025-10-05T13:38:27.356878
+tweet_180,flood,,"BREAKING: Flash flood warning! River overflowing, evacuate immediately",1,2025-09-26T12:38:27.356884
+tweet_181,fire,Hyderabad,UPDATE: Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-09-28T18:38:27.356890
+tweet_182,fire,Chennai,"Building on fire, smoke everywhere. Fire department on scene.",1,2025-10-06T03:38:27.356896
+tweet_183,storm,Hyderabad,"ALERT: Tornado warning issued, take shelter immediately",1,2025-10-18T12:38:27.356902
+tweet_184,earthquake,,"URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-09-28T06:38:27.356908
+tweet_185,flood,,"BREAKING: Trapped on second floor, water still rising. Help needed at Main Street!",1,2025-10-02T00:38:27.356913
+tweet_186,flood,,"ALERT: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-06T06:38:27.356919
+tweet_187,storm,Ahmedabad,"Heavy rain and winds, flooding expected",1,2025-09-25T06:38:27.356924
+tweet_188,work,Hyderabad,"Finished my project on time, feeling accomplished",0,2025-10-05T08:38:27.356930
+tweet_189,entertainment,,"New movie release this Friday, can't wait!",0,2025-09-28T01:38:27.356935
+tweet_190,fire,,Wildfire spreading rapidly! Multiple homes at risk. Evacuate now!,1,2025-10-16T11:38:27.356941
+tweet_191,storm,,"ALERT: Hurricane approaching, strong winds already causing damage.",1,2025-10-19T15:38:27.356947
+tweet_192,food,,Morning coffee tastes extra good today,0,2025-10-16T05:38:27.356952
+tweet_193,storm,,"Tornado warning issued, take shelter immediately",1,2025-10-16T15:38:27.356957
+tweet_194,storm,,"UPDATE: Heavy rain and winds, flooding expected",1,2025-09-25T01:38:27.356963
+tweet_195,flood,Bangalore,"ALERT: Roads completely flooded, cars stuck. Emergency services needed.",1,2025-10-02T20:38:27.356969
+tweet_196,earthquake,Kolkata,"BREAKING: Massive earthquake just hit! Buildings shaking, people running outside. Need help!",1,2025-10-01T02:38:27.356975
+tweet_197,earthquake,Kolkata,"UPDATE: Aftershocks continue, people scared to go back inside",1,2025-10-01T00:38:27.356981
+tweet_198,earthquake,Ahmedabad,"URGENT: Building collapsed after earthquake, people trapped inside!",1,2025-10-15T23:38:27.356987
+tweet_199,fire,Kolkata,"BREAKING: CRITICAL: Fire out of control, need more firefighters immediately!",1,2025-09-25T09:38:27.356993
