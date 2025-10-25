@@ -21,6 +21,8 @@ if [ ! -d data/chromadb ]; then
         echo "❌ Initialization failed"
         exit 1
     fi
+else
+    echo "✅ System already initialized (found data/chromadb)"
 fi
 
 echo ""
@@ -34,7 +36,7 @@ echo ""
 
 # Start backend in background
 echo "Starting backend..."
-uvicorn backend.main:app --reload --port 8000 &
+uvicorn backend.main_simple:app --reload --port 8000 &
 BACKEND_PID=$!
 
 # Wait a bit for backend to start
@@ -42,7 +44,7 @@ sleep 3
 
 # Start frontend
 echo "Starting frontend..."
-streamlit run frontend/app.py &
+streamlit run frontend/app_enhanced.py &
 FRONTEND_PID=$!
 
 # Wait for both processes

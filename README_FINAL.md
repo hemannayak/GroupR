@@ -38,7 +38,7 @@ An intelligent, real-time disaster response platform that:
 ✅ **Generates** actionable situation reports instantly  
 
 ### 🎬 See It In Action
-
+gi
 ![Dashboard Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=CrisisLens+AI+Dashboard)
 
 ---
