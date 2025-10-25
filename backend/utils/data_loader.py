@@ -22,11 +22,17 @@ def load_disaster_tweets(filepath: str) -> List[DisasterTweet]:
                 timestamp = datetime.fromisoformat(row['timestamp']) if 'timestamp' in row else datetime.now()
             except:
                 timestamp = datetime.now()
+            
+            # Handle NaN location
+            location = row.get('location', None)
+            if pd.isna(location):
+                location = None
+            
             tweet = DisasterTweet(
                 id=str(row['id']),
                 text=text,
                 timestamp=timestamp,
-                location=row.get('location', None),
+                location=location,
                 disaster_type=None,
                 severity=None,
                 is_real_disaster=bool(row.get('target', 0))

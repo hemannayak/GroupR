@@ -102,6 +102,42 @@ class ResourceMatch(BaseModel):
         }
 
 
+class ExtractedInfo(BaseModel):
+    disaster_type: DisasterType = Field(..., description="Type of disaster")
+    severity: Severity = Field(..., description="Severity level")
+    location: Optional[str] = Field(None, description="Specific location if mentioned")
+    needs: List[str] = Field(default_factory=list, description="List of needs")
+    confidence: float = Field(..., ge=0.0, le=1.0, description="Confidence score")
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "disaster_type": "FLOOD",
+                "severity": "CRITICAL",
+                "location": "Main St Bridge",
+                "needs": ["rescue", "medical"],
+                "confidence": 0.95
+            }
+        }
+
+
+class QueryResponse(BaseModel):
+    answer: str = Field(..., description="Generated answer")
+    sources: List[str] = Field(default_factory=list, description="List of source tweet IDs")
+    relevant_events: List[DisasterEvent] = Field(default_factory=list, description="Relevant events")
+    confidence: float = Field(..., ge=0.0, le=1.0, description="Confidence score")
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "answer": "Multiple floods reported in Mumbai.",
+                "sources": ["123456"],
+                "relevant_events": [],
+                "confidence": 0.95
+            }
+        }
+
+
 class DisasterTweet(BaseModel):
     id: str = Field(..., description="Tweet ID")
     text: str = Field(..., description="Tweet text")

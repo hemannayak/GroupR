@@ -10,8 +10,15 @@ from backend.models import DisasterEvent, DisasterType, Severity
 class DisasterVectorStore:
     def __init__(self, persist_dir: str = "chroma_db"):
         self.client = chromadb.PersistentClient(path=persist_dir)
-        self.collection = self.client.get_or_create_collection(name="disaster_events")
         self.encoder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        # Create collection without default embedding function to avoid ONNX download
+        try:
+            self.collection = self.client.get_collection(name="disaster_events")
+        except:
+            self.collection = self.client.create_collection(
+                name="disaster_events",
+                metadata={"hnsw:space": "cosine"}
+            )
 
     def add_tweets(self, events: List[DisasterEvent]):
         """Embed tweet text and store with metadata."""
@@ -21,6 +28,7 @@ class DisasterVectorStore:
         documents = []
         metadatas = []
         ids = []
+        embeddings = []
         
         for event in events:
             documents.append(event.text)
@@ -31,16 +39,21 @@ class DisasterVectorStore:
                 "location": event.location or "",
                 "timestamp": event.timestamp.isoformat(),
                 "source": event.source,
-                "lat": event.coordinates[0] if event.coordinates else None,
-                "lon": event.coordinates[1] if event.coordinates else None,
+                "lat": str(event.coordinates[0]) if event.coordinates else "0",
+                "lon": str(event.coordinates[1]) if event.coordinates else "0",
             })
             ids.append(event.id)
+        
+        # Compute embeddings manually
+        logger.info(f"Computing embeddings for {len(documents)} documents...")
+        embeddings = self.encoder.encode(documents, show_progress_bar=True).tolist()
         
         # Batch add
         batch_size = 100
         for i in range(0, len(documents), batch_size):
             self.collection.add(
                 documents=documents[i:i+batch_size],
+                embeddings=embeddings[i:i+batch_size],
                 metadatas=metadatas[i:i+batch_size],
                 ids=ids[i:i+batch_size]
             )
@@ -54,8 +67,11 @@ class DisasterVectorStore:
     def query(self, query_text: str, k: int = 5, filters: Optional[Dict] = None) -> List[DisasterEvent]:
         """Query vector store and return full DisasterEvent objects"""
         try:
+            # Compute query embedding manually
+            query_embedding = self.encoder.encode([query_text])[0].tolist()
+            
             results = self.collection.query(
-                query_texts=[query_text],
+                query_embeddings=[query_embedding],
                 n_results=k,
                 where=filters
             )
