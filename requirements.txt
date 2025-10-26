@@ -19,7 +19,7 @@ numpy
 
 # Twitter streaming
 tweepy  # If using Twitter API
-# snscrape  # Alternative - no API needed
+snscrape  # Alternative - no API needed
 
 # Frontend
 streamlit

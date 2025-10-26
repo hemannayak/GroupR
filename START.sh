@@ -1,7 +1,7 @@
 #!/bin/bash
-# DisasterLens AI - Quick Start Script
+# CrisisLens AI - Quick Start Script
 
-echo "🚀 Starting DisasterLens AI..."
+echo "🚀 Starting CrisisLens AI..."
 echo ""
 
 # Check if .env exists
