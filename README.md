@@ -283,21 +283,7 @@ Access dashboard at http://localhost:8501
 - NGOs
 - Government agencies
 
-## 📹 Demo Video
-[Link to video]
-
-## 🧪 Testing
-pytest tests/ -v
-
-## 📝 AI Chat Logs
-[Link to logs]
-
-## 👥 Team
-[Your name]
-
-## 📄 License
-MIT
 
 ---
 
-**Built in 11 hours for GenAIVersity Hackathon 2025** 🚀
+**Built in GenAIVersity Hackathon 2025** 🚀
